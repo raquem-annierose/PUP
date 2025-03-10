@@ -151,8 +151,7 @@ function normalImg(x, story =false) {
 }
 
 var myIndex = 0;
-carousel();
-
+setTimeout(carousel, 10000);  
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -162,7 +161,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 10000);    
+   
 }
 
 

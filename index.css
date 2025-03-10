@@ -290,7 +290,7 @@ input:focus, textarea:focus, select:focus {
   flex-direction: column;
 }
 .content .banner {
-  background-color: green;
+  background-color: maroon;
 }
 .content .featured-blogs {
   flex: 1;
@@ -354,10 +354,25 @@ input:focus, textarea:focus, select:focus {
   min-height: 100vh;
 }
 
+.image-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.image-box {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .content-wrap {
   flex: 1;
   padding-bottom: 2.5rem; /* Footer height */
 }
+
+
 
 /* RESPONSIVE LAYOUT */
 @media (min-width: 1500px) {
@@ -503,7 +518,7 @@ input:focus, textarea:focus, select:focus {
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -512,7 +527,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .hero-content h1 {
-    font-size: 2.5em;
+    font-size: 2.0em;
     margin-bottom: 20px;
 }
 
