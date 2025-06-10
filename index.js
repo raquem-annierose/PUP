@@ -1,5 +1,3 @@
-
-
 const iconTrigger = document.getElementById("iconTrigger")
 const icon = document.getElementById("icon")
 const menu = document.querySelector(".menu-container")
@@ -163,6 +161,54 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
    
 }
+
+// Enhanced animation setup with better fallbacks
+document.addEventListener('DOMContentLoaded', function() {
+  // Add class to body to indicate JS is enabled
+  document.body.classList.add('js-enabled');
+  
+  console.log('Setting up card animations');
+  
+  // Get all amenity cards
+  const cards = document.querySelectorAll('.amenity-card');
+  if (cards.length === 0) {
+    console.log('No cards found!');
+    return;
+  }
+  
+  console.log(`Found ${cards.length} cards`);
+  
+  // Immediate animation if needed
+  const shouldAnimateImmediately = window.innerWidth < 768;
+  
+  if (shouldAnimateImmediately) {
+    // Animate all cards immediately on mobile
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add('animated');
+      }, index * 200);
+    });
+  } else if ('IntersectionObserver' in window) {
+    // Use intersection observer on desktop
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    
+    cards.forEach(card => {
+      cardObserver.observe(card);
+    });
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    cards.forEach(card => {
+      card.classList.add('animated');
+    });
+  }
+});
 
 
 

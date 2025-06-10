@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AuStart</title>
-
+    <title>About - Nevets Odnah Prestige School</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
-<div class="navbar">
-    <a href="index.html" class="logo-container">
-        <img src="taguigschoollogo.png"/>
-    </a>
-    <div class="logo-text">
-        Polytechnic University of the Philippines - Taguig Campus
-    </div>
-    <div class="search-bar">
-        <div class="search">
-            <input id="searchInput" type="text" autocomplete="off" placeholder="Search"/>
-            <button onclick="renderResult()">
-                <i class="fa fa-search" style="color: white;"></i>
-            </button>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="logo.jpg"/>
+        </a>
+        <div class="logo-text">
+            <span class="school-name-line">Nevets Odnah</span>
+            <span class="school-name-line">Prestige School</span>
         </div>
-    </div>
-    <div id="iconTrigger" class="icon-container hide-icon">
-        <i id="icon" class="fa fa-bars"></i>
-    </div>
-    <ul class="menu-container hide">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-        <li><a href="news.html">News & Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
-           
+        <div class="search-bar">
+            <div class="search">
+                <input id="searchInput" type="text" autocomplete="off" placeholder="Search"/>
+                <button onclick="renderResult()">
+                    <i class="fa fa-search" style="color: white;"></i>
+                </button>
+            </div>
         </div>
         <div id="iconTrigger" class="icon-container hide-icon">
             <i id="icon" class="fa fa-bars"></i>
@@ -47,41 +33,98 @@
         <ul class="menu-container hide">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="news.html">Events</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <!-- <li>Contacts</li> -->
         </ul>
-     
     </div>
 
-    
-    <div class="content">
-        <hr>
-        <p style="text-align: center; font-size: 1.5em;">PUP Taguig, or the Polytechnic University of the Philippines Taguig Branch, is a satellite campus of the Polytechnic University of the Philippines (PUP) located in Taguig City, established in 1992, and aims to be a source of commercial and industrial managers and employers for the area.</p>
-        <img src="pup.jpg" alt="PUP Taguig Campus" style="width:100%; height:auto;">
-        <hr>
-        
-        <!-- Vision and Mission Section -->
-        <div class="vision-mission">
-            <h2 style="color: maroon; text-align: center;">Vision</h2>
-            <p style="text-align: center;">A Leading Comprehensive Polytechnic University in Asia.</p>
-            <h2 style="color: maroon; text-align: center;">Mission</h2>
-            <p style="text-align: center;">Advance an inclusive, equitable, and globally relevant polytechnic education towards national development.</p>
+    <div class="content page-container">
+        <div id="main-body" class="content-wrap">
+            <!-- Hero Section with Building Image -->
+            <div class="about-hero">
+                <div class="about-hero-overlay"></div>
+                <h1>Our Campus</h1>
+                <p>Where Excellence Takes Shape</p>
+            </div>
+
+            <!-- School Introduction -->
+            <section class="about-section">
+                <div class="about-container">
+                    <div class="about-text">
+                        <h2>Welcome to Nevets Odnah Prestige School</h2>
+                        <p>Founded in 1992, NOPS has established itself as a beacon of academic excellence and character development. Our distinctive red and white campus building symbolizes our commitment to bold innovation (red) and pure academic pursuit (white).</p>
+                        <p>With modern facilities spanning four floors and state-of-the-art classrooms, our campus provides the perfect environment for learning and growth. The glass-fronted central atrium welcomes visitors and floods our hallways with natural light, creating an inspiring atmosphere for our students and faculty.</p>
+                        <p>Our architecture reflects our educational philosophy: structured yet transparent, with clear pathways to success and open spaces that foster creativity and collaboration.</p>
+                    </div>
+                    <div class="about-image-container">
+                        <img src="building2.jpg" alt="NOPS Campus Building" class="about-image">
+                        <div class="image-caption">Our modern campus facility in the heart of the city</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Values Section -->
+            <section class="values-section">
+                <h2>Our Core Values</h2>
+                <div class="values-container">
+                    <div class="value-card">
+                        <i class="fa fa-star"></i>
+                        <h3>Excellence</h3>
+                        <p>We pursue excellence in all endeavors, encouraging students to reach their highest potential.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa fa-lightbulb-o"></i>
+                        <h3>Innovation</h3>
+                        <p>We embrace innovative teaching methods and technologies to prepare students for the future.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa fa-users"></i>
+                        <h3>Community</h3>
+                        <p>We foster a supportive community where every student feels valued and included.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa fa-globe"></i>
+                        <h3>Global Perspective</h3>
+                        <p>We develop globally-minded citizens ready to make positive contributions to society.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Expert Faculty</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Successful Alumni</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">College Acceptance Rate</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <h2>Experience the NOPS Difference</h2>
+                <p>Join our community of learners and leaders. Schedule a campus tour today.</p>
+                <button class="cta-button">Contact Us for a Tour</button>
+            </section>
         </div>
+        <div class="footer"></div>
     </div>
 
-
-
-    <div class="footer">
-
-
-    </div>
-
-    </div>
-
-
-
-
-    
-    <script src="./js/index.js"></script>
+    <script src="index.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>

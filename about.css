@@ -1,0 +1,279 @@
+/* About Page Specific Styles */
+
+.about-hero {
+  position: relative;
+  height: 400px;
+  background-image: url('building.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,102,51,0.7));
+  z-index: 1;
+}
+
+.about-hero h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.about-hero p {
+  font-size: 1.5em;
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.2em;
+  color: #006633;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-image-container {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden; /* Ensure the animation doesn't spill out */
+  max-height: 550px; /* Add max height to container */
+}
+
+.about-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Changed from 800px to 700px */
+  object-fit: cover; /* Ensure image covers the area without stretching */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  opacity: 0; /* Start invisible */
+  transform: translateY(50px); /* Start position - below target */
+}
+
+.about-image.animated {
+  animation: buildingSlideUp 1.2s cubic-bezier(0.17, 0.67, 0.3, 0.96) forwards;
+}
+
+@keyframes buildingSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Make sure the hover effect works after animation */
+.about-image:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.values-section {
+  padding: 70px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 2.2em;
+  color: #006633;
+  margin-bottom: 40px;
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.value-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.value-card i {
+  font-size: 2.5em;
+  color: #006633;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #006633;
+}
+
+.value-card p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.stats-section {
+  padding: 70px 0;
+  background-color: #006633;
+  color: white;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.cta-section {
+  padding: 70px 0;
+  text-align: center;
+  background-color: #e6ffe6;
+}
+
+.cta-section h2 {
+  font-size: 2.2em;
+  color: #006633;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #006633;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #70c070;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .about-hero p {
+    font-size: 1.2em;
+  }
+  
+  .stat-number {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    height: 300px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2em;
+  }
+  
+  .about-hero p {
+    font-size: 1em;
+  }
+  
+  .about-text h2, .values-section h2, .cta-section h2 {
+    font-size: 1.8em;
+  }
+}

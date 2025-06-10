@@ -8,16 +8,18 @@
     <title>Academics - PUP Taguig</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="academics.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <div class="navbar">
         <a href="index.html" class="logo-container">
-            <img src="taguigschoollogo.png"/>
+            <img src="logo.jpg"/>
         </a>
         <div class="logo-text">
-            Polytechnic University of the Philippines - Taguig Campus
+            Nevets Odnah<br>
+            Prestige School
         </div>
         <div class="search-bar">
             <div class="search">
@@ -35,14 +37,105 @@
             <li><a href="about.html">About</a></li>
             <li class="active"><a href="academics.html">Academics</a></li>
             <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="news.html">News & Events</a></li>
+            <li><a href="news.html">Events</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <div class="content page-container">
         <div id="main-body" class="content-wrap">
-            <!-- Add your academic content here -->
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h1>Academic Excellence</h1>
+                <p>Discover our innovative learning environments designed to inspire and engage students.</p>
+            </div>
+
+            <!-- Facilities Section -->
+            <section class="facilities-section">
+                <h2>Our Learning Environments</h2>
+                <p>We provide state-of-the-art facilities to ensure optimal learning experiences for all students.</p>
+                
+                <div class="facilities-container">
+                    <div class="facility-card">
+                        <div class="image-container">
+                            <img src="classroom.jpg" alt="Modern Classroom">
+                        </div>
+                        <div class="facility-info">
+                            <h3>Modern Classrooms</h3>
+                            <p>Spacious and well-designed classrooms equipped with modern furniture and learning tools.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="image-container">
+                            <img src="computerlab.jpg" alt="Computer Laboratory">
+                        </div>
+                        <div class="facility-info">
+                            <h3>Computer Labs</h3>
+                            <p>High-performance computer laboratories with the latest software for technology-based learning.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card">
+                        <div class="image-container">
+                            <img src="tabletroom.jpg" alt="Interactive Tablet Room">
+                        </div>
+                        <div class="facility-info">
+                            <h3>Interactive Tablet Rooms</h3>
+                            <p>Digital learning spaces with tablets for interactive and collaborative educational activities.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Programs Section -->
+            <section class="programs-section">
+                <h2>Academic Programs</h2>
+                <div class="programs-container">
+                    <div class="program-tabs">
+                        <button class="tab-button active" data-tab="elementary">Elementary</button>
+                        <button class="tab-button" data-tab="jhs">Junior High School</button>
+                        <button class="tab-button" data-tab="shs">Senior High School</button>
+                    </div>
+                    <div class="tab-content active" id="elementary">
+                        <h3>Elementary Education (Grades 1-6)</h3>
+                        <ul>
+                            <li>Mother Tongue-Based Multilingual Education</li>
+                            <li>English and Filipino Language Development</li>
+                            <li>Mathematics and Science Fundamentals</li>
+                            <li>Araling Panlipunan (Social Studies)</li>
+                            <li>Music, Arts, Physical Education, and Health (MAPEH)</li>
+                            <li>Edukasyon sa Pagpapakatao (Values Education)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="jhs">
+                        <h3>Junior High School (Grades 7-10)</h3>
+                        <ul>
+                            <li>English and Filipino Communication Arts</li>
+                            <li>Mathematics (Advanced Algebra, Geometry, Statistics)</li>
+                            <li>Science and Technology</li>
+                            <li>Araling Panlipunan and Contemporary Issues</li>
+                            <li>Technology and Livelihood Education (TLE)</li>
+                            <li>MAPEH and Character Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="shs">
+                        <h3>Senior High School Tracks (Grades 11-12)</h3>
+                        <ul>
+                            <li>STEM (Science, Technology, Engineering, and Mathematics)</li>
+                            <li>ABM (Accountancy, Business, and Management)</li>
+                            <li>HUMSS (Humanities and Social Sciences)</li>
+                            <li>GAS (General Academic Strand)</li>
+                            <li>TVL (Technical-Vocational-Livelihood Tracks)</li>
+                            <li>Arts and Design Track</li>
+                            <li>Sports Track</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -50,7 +143,6 @@
         <!-- Add footer content here -->
     </div>
 
-   
-
+    <script src="academics.js"></script>
 </body>
 </html>
