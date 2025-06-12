@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events - NOPS</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="navbar">
+         <a href="index.html" class="logo-container">
+            <img src="logo.jpg"/>
+        </a>
+        <div class="logo-text">
+            Nevets Odnah<br>
+            Prestige School
+        </div>
+        <div class="search-bar">
+            <div class="search">
+                <input id="searchInput" type="text" autocomplete="off"
+                       placeholder="Search"/>
+                <button onclick="renderResult()">
+                    <i class="fa fa-search" style="color: white;"></i>
+                </button>
+            </div>
+        </div>
+        <div id="iconTrigger" class="icon-container hide-icon">
+            <i id="icon" class="fa fa-bars"></i>
+        </div>
+        <ul class="menu-container hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li class="active"><a href="news.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content page-container">
+        <div id="main-body" class="content-wrap">
+            <h1>News & Events</h1>
+            <div class="events-container">
+                <div class="event-card">
+                    <img src="photo1.jpg" alt="NOPS School Front Building">
+                    <div class="event-info">
+                        <h2>School Front Building Unveiled</h2>
+                        <p>Explore the new facade of Nevets Odnah Prestige
+                           School, a symbol of our commitment to excellence.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo2.jpg" alt="NOPS School Hallway">
+                    <div class="event-info">
+                        <h2>Walk Through Our Halls</h2>
+                        <p>Discover the vibrant and inspiring hallways that
+                           connect our learning spaces.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo3.jpg" alt="NOPS Basketball Court">
+                    <div class="event-info">
+                        <h2>New Basketball Court Opens</h2>
+                        <p>Our state-of-the-art basketball court is now open for
+                           students to enjoy and compete.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="classroom.jpg" alt="Modern Classroom at NOPS">
+                    <div class="event-info">
+                        <h2>Modern Classroom Experience</h2>
+                        <p>Step into our newly upgraded classrooms designed for
+                           interactive and engaging learning.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="computerlab.jpg" alt="NOPS Computer Laboratory">
+                    <div class="event-info">
+                        <h2>Advanced Computer Laboratory</h2>
+                        <p>Our computer lab is equipped with the latest
+                           technology to foster digital literacy.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo6.jpg" alt="Student Lockers at NOPS">
+                    <div class="event-info">
+                        <h2>Secure Student Storage</h2>
+                        <p>New student lockers and storage solutions provide
+                           convenience and security on campus.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo7.jpg" alt="Outdoor Sports Court at NOPS">
+                    <div class="event-info">
+                        <h2>Outdoor Sports Activities</h2>
+                        <p>Enjoy various sports on our versatile outdoor court,
+                           promoting health and teamwork.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="tabletroom.jpg" alt="Tablet Learning Room at NOPS">
+                    <div class="event-info">
+                        <h2>Interactive Tablet Learning</h2>
+                        <p>Experience innovative teaching methods in our
+                           dedicated tablet learning room.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="building2.jpg" alt="Annual School Fair">
+                    <div class="event-info">
+                        <h2>Annual School Fair Highlights</h2>
+                        <p>Join us for a day of fun, games, and community at our
+                           much-anticipated annual school fair.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo2.jpg" alt="Science Exhibition">
+                    <div class="event-info">
+                        <h2>Science Exhibition Showcase</h2>
+                        <p>Witness incredible student projects and innovations at
+                           our yearly science exhibition.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo3.jpg" alt="Sports Day Championship">
+                    <div class="event-info">
+                        <h2>Sports Day Championship</h2>
+                        <p>Cheer for our athletes as they compete for glory in
+                           various sporting events.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo4.jpg" alt="Parent-Teacher Conference">
+                    <div class="event-info">
+                        <h2>Parent-Teacher Conferences</h2>
+                        <p>Engage with educators to discuss student progress and
+                           collaborative learning strategies.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="computerlab.jpg" alt="Coding Workshop">
+                    <div class="event-info">
+                        <h2>Introduction to Coding Workshop</h2>
+                        <p>Unlock the world of programming with our
+                           beginner-friendly coding workshop for all ages.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo6.jpg" alt="Art Club Gallery">
+                    <div class="event-info">
+                        <h2>Art Club's Annual Gallery</h2>
+                        <p>Admire the creativity and talent of our students at
+                           the Art Club's gallery opening.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="photo7.jpg" alt="Music Fest">
+                    <div class="event-info">
+                        <h2>NOPS Annual Music Fest</h2>
+                        <p>Experience a night of melodies and performances by our
+                           talented student musicians.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="nops1.jpg" alt="Digital Literacy Seminar">
+                    <div class="event-info">
+                        <h2>Digital Literacy Seminar</h2>
+                        <p>Enhance your digital skills with our informative
+                           seminar on navigating the online world safely.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+    <script src="events.js"></script>
+</body>
+</html>
