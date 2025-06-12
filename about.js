@@ -42,22 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateValue();
   }
   
-  const buildingImage = document.querySelector('.about-image');
-  
-  if (buildingImage && 'IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
-          console.log('Building image animation triggered');
-          imageObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3, rootMargin: '0px 0px -50px 0px' });
-    
-    imageObserver.observe(buildingImage);
-  }
-  
   const ctaButton = document.querySelector('.cta-button');
   if (ctaButton) {
     ctaButton.addEventListener('click', function() {

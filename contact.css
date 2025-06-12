@@ -55,10 +55,6 @@
     margin-bottom: 20px;
 }
 
-.map-placeholder iframe {
-    border-radius: 8px;
-}
-
 .contact-form-section {
     flex: 1.5;
     min-width: 320px;

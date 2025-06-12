@@ -89,23 +89,6 @@
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.about-image.animated {
-  animation: buildingSlideUp 1.2s cubic-bezier(0.17, 0.67, 0.3, 0.96) forwards;
-}
-
-@keyframes buildingSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .about-image:hover {
