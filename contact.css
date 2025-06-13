@@ -18,7 +18,7 @@
     min-width: 300px;
 }
 
-.contact-details, .map-placeholder, .contact-image {
+.contact-details, .map-placeholder {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -27,7 +27,7 @@
 }
 
 .contact-details h2, .map-placeholder h2, .contact-form-section h2 {
-    color: #00509e;
+    color: #b30000; 
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -40,19 +40,12 @@
 
 .contact-details i {
     margin-right: 10px;
-    color: #00509e;
+    color: #b30000; 
 }
 
 .contact-details ul {
     list-style: none;
     padding-left: 0;
-}
-
-.contact-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 .contact-form-section {
@@ -61,7 +54,10 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(179, 0, 0, 0.2); 
+    transform: translateY(-30px); 
+    position: relative; 
+    z-index: 1; 
 }
 
 .form-group {
@@ -91,7 +87,7 @@
 }
 
 .submit-btn {
-    background-color: #00509e;
+    background-color: #b30000; 
     color: white;
     padding: 12px 25px;
     border: none;
@@ -102,7 +98,34 @@
 }
 
 .submit-btn:hover {
-    background-color: #003366;
+    background-color: #e60000; 
+}
+
+.contact-social-links {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; 
+}
+
+.contact-social-links p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+    font-weight: bold;
+}
+
+.contact-social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #b30000; 
+    font-size: 1.8em; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-social-links a:hover {
+    color: #e60000; 
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -111,5 +134,8 @@
     }
     .contact-info-map, .contact-form-section {
         flex: 1 1 100%;
+    }
+    .contact-form-section { 
+        transform: translateY(0); 
     }
 }

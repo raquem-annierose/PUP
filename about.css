@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,102,51,0.7));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(179,0,0,0.7));
   z-index: 1;
 }
 
@@ -62,7 +62,7 @@
 
 .about-text h2 {
   font-size: 2.2em;
-  color: #006633;
+  color: #b30000;
   margin-bottom: 20px;
 }
 
@@ -87,7 +87,7 @@
   max-height: 500px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(179, 0, 0, 0.15); 
   transition: transform 0.3s ease;
 }
 
@@ -110,7 +110,7 @@
 
 .values-section h2 {
   font-size: 2.2em;
-  color: #006633;
+  color: #b30000;
   margin-bottom: 40px;
 }
 
@@ -142,14 +142,14 @@
 
 .value-card i {
   font-size: 2.5em;
-  color: #006633;
+  color: #b30000;
   margin-bottom: 20px;
 }
 
 .value-card h3 {
   font-size: 1.3em;
   margin-bottom: 15px;
-  color: #006633;
+  color: #b30000;
 }
 
 .value-card p {
@@ -160,7 +160,7 @@
 
 .stats-section {
   padding: 70px 0;
-  background-color: #006633;
+  background-color: #b30000;
   color: white;
 }
 
@@ -194,12 +194,12 @@
 .cta-section {
   padding: 70px 0;
   text-align: center;
-  background-color: #e6ffe6;
+  background-color: #ffebeb;
 }
 
 .cta-section h2 {
   font-size: 2.2em;
-  color: #006633;
+  color: #b30000;
   margin-bottom: 20px;
 }
 
@@ -211,7 +211,7 @@
 }
 
 .cta-button {
-  background-color: #006633;
+  background-color: #b30000;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -222,7 +222,7 @@
 }
 
 .cta-button:hover {
-  background-color: #70c070;
+  background-color: #e60000;
 }
 
 @media (max-width: 768px) {

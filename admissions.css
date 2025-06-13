@@ -1,13 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
 }
 
 .admissions-hero-section {
     position: relative;
-    background-color: #e6f7e6; 
+    background-color: #ffebeb; 
     padding-top: 60px;
     padding-bottom: 120px; 
     overflow: hidden;
@@ -36,7 +33,7 @@ body {
 
 .admissions-hero-text h2 {
     font-size: 2.8em;
-    color: #004d00;
+    color: #b30000;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -48,7 +45,7 @@ body {
 
 .btn-enroll-now {
     display: inline-block;
-    background-color: #28a745;
+    background-color: #b30000;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -60,7 +57,7 @@ body {
 }
 
 .btn-enroll-now:hover {
-    background-color: #218838;
+    background-color: #e60000;
     transform: translateY(-2px);
 }
 
@@ -77,7 +74,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 77, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(179, 0, 0, 0.2);
     transform: rotate(-3deg) translateY(-10px);
     position: relative;
     z-index: 3;
@@ -105,7 +102,7 @@ body {
 }
 
 .page-section.alt-background {
-    background-color: #f0fff0;
+    background-color: #ffebeb;
 }
 
 .section-content {
@@ -115,7 +112,7 @@ body {
 
 .page-section h2 {
     font-size: 2.5em;
-    color: #004d00;
+    color: #b30000;
     margin-bottom: 40px;
 }
 
@@ -136,12 +133,12 @@ body {
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 77, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(179, 0, 0, 0.15);
 }
 
 .feature-item i.fa {
     font-size: 2.5em;
-    color: #28a745;
+    color: #b30000;
     margin-bottom: 15px;
     display: block;
     text-align: center;
@@ -149,7 +146,7 @@ body {
 
 .feature-item h3 {
     font-size: 1.5em;
-    color: #004d00;
+    color: #b30000;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -194,7 +191,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #28a745;
+    background-color: #b30000;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
